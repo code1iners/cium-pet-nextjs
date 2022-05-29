@@ -2,11 +2,10 @@ import FormInput from "@/components/form-input";
 import HorizontalButton from "@/components/horizontal-button";
 import MainBody from "@/components/layouts/main-body";
 import { useForm } from "react-hook-form";
+import { SignInForm } from "./sign-in";
 
-interface SignUpForm {
-  email: string;
+interface SignUpForm extends SignInForm {
   username: string;
-  password: string;
   confirmPassword: string;
 }
 
@@ -37,10 +36,15 @@ export default function SignUp() {
     <MainBody>
       <article className="p-10">
         {/* Welcome */}
-        <section className="mb-5">
-          <h1 className="text-3xl tracking-wider font-bold text-violet-500">
-            Welcome!
-          </h1>
+        <section className="mb-8">
+          <div className="flex flex-col gap-2">
+            <span className="text-3xl tracking-wider font-bold text-violet-500 cursor-default">
+              Create
+            </span>
+            <span className="text-4xl tracking-wider font-bold text-violet-500 cursor-default">
+              Account
+            </span>
+          </div>
         </section>
 
         {/* Form */}
