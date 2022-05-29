@@ -32,7 +32,7 @@ const MainHeader = () => {
         </Link>
       </motion.div>
       <div>
-        <ul className="flex items-center gap-2 tracking-widest font-semibold">
+        <ul className="flex items-center gap-2 tracking-widest font-semibold mr-2">
           <li className="cursor-pointer">Join</li>
           <li>Login</li>
         </ul>
