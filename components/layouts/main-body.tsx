@@ -1,3 +1,3 @@
 export default function MainBody() {
-  return <main className="grow">Body</main>;
+  return <main className="grow">Main</main>;
 }

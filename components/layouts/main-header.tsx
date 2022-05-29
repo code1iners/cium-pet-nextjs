@@ -12,7 +12,7 @@ const MainHeader = () => {
   };
 
   return (
-    <header className="py-7 px-2 border-b flex justify-between">
+    <header className="py-6 px-2 flex justify-between">
       <motion.div
         initial={{
           opacity: 0,
@@ -27,14 +27,16 @@ const MainHeader = () => {
         <Image src={LogoImage} alt="Logo image" width={30} height={30} />
         <Link href="/">
           <a>
-            <h1 className="text-xl uppercase tracking-wider transition-colors text-violet-500">
-              cium
-            </h1>
+            <h1 className="text-gradient">cium</h1>
           </a>
         </Link>
       </motion.div>
       <div>
-        <MenuButton onClick={onMenuClick} isVisible={isMenuVisible} />
+        <ul className="flex items-center gap-2 tracking-widest font-semibold">
+          <li className="cursor-pointer">Join</li>
+          <li>Login</li>
+        </ul>
+        {/* <MenuButton onClick={onMenuClick} isVisible={isMenuVisible} /> */}
       </div>
     </header>
   );
