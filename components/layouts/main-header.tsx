@@ -2,7 +2,6 @@ import Image from "next/image";
 import LogoImage from "@/assets/logos/cat.png";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 const MainHeader = () => {
   return (
@@ -27,12 +26,12 @@ const MainHeader = () => {
       </motion.div>
       <div>
         <ul className="flex items-center gap-3 tracking-widest font-semibold mr-2">
-          <Link href="sign-up">
+          <Link href="/sign-up">
             <a>
               <li className="header-item">Sign up</li>
             </a>
           </Link>
-          <Link href="sign-in">
+          <Link href="/sign-in">
             <a>
               <li className="header-item">Sign In</li>
             </a>

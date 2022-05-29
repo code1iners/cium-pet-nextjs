@@ -14,4 +14,8 @@
   .header-item {
     @apply cursor-pointer transition-colors hover:text-violet-400;
   }
+
+  .form-input {
+    @apply p-2 outline-none border border-gray-400 rounded-md focus:border-violet-500 tracking-wider;
+  }
 }
