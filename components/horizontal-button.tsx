@@ -13,7 +13,7 @@ export default function HorizontalButton({
     <button
       onClick={onClick}
       type={type}
-      className="w-full text-white bg-violet-500 p-3 rounded-md hover:bg-violet-600 outline-none"
+      className="w-full text-white bg-violet-500 p-3 rounded-md hover:bg-violet-600 outline-none tracking-wider"
     >
       {text ? text : "Button"}
     </button>
