@@ -1,3 +1,7 @@
-export default function MainBody() {
-  return <main className="grow">Main</main>;
+interface MainBodyProps {
+  children: React.ReactNode;
+}
+
+export default function MainBody({ children }: MainBodyProps) {
+  return <main className="grow">{children}</main>;
 }
